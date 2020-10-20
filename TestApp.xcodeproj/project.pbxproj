@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53369B6F253C06B60032195A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53369B6E253C06B60032195A /* Model.swift */; };
+		53369B72253C06C40032195A /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53369B71253C06C40032195A /* AddItem.swift */; };
+		53369B7A253C13470032195A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53369B79253C13470032195A /* ContentView.swift */; };
 		535516D6253986C9003F563F /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516D5253986C9003F563F /* TestAppApp.swift */; };
-		535516D8253986C9003F563F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516D7253986C9003F563F /* ContentView.swift */; };
 		535516DA253986CC003F563F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535516D9253986CC003F563F /* Assets.xcassets */; };
 		535516DD253986CC003F563F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535516DC253986CC003F563F /* Preview Assets.xcassets */; };
 		535516DF253986CC003F563F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516DE253986CC003F563F /* Persistence.swift */; };
 		535516E2253986CC003F563F /* TestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 535516E0253986CC003F563F /* TestApp.xcdatamodeld */; };
+		535516EB25398771003F563F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516EA25398771003F563F /* ImageView.swift */; };
+		535516EE25398781003F563F /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516ED25398781003F563F /* PersonView.swift */; };
+		535516F12539A4D7003F563F /* PersonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516F02539A4D7003F563F /* PersonItem.swift */; };
+		5364DEA7253E8B74001F7175 /* Agent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */; };
+		5364DEA8253E8B74001F7175 /* Agent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */; };
+		53804169253EDD75008FE82F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53804168253EDD75008FE82F /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53369B6E253C06B60032195A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		53369B71253C06C40032195A /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
+		53369B79253C13470032195A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		535516D2253986C9003F563F /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535516D5253986C9003F563F /* TestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppApp.swift; sourceTree = "<group>"; };
-		535516D7253986C9003F563F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		535516D9253986CC003F563F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		535516DC253986CC003F563F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		535516DE253986CC003F563F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		535516E1253986CC003F563F /* TestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestApp.xcdatamodel; sourceTree = "<group>"; };
 		535516E3253986CC003F563F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535516EA25398771003F563F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		535516ED25398781003F563F /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		535516F02539A4D7003F563F /* PersonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItem.swift; sourceTree = "<group>"; };
+		5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agent+CoreDataClass.swift"; sourceTree = "<group>"; };
+		5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		53804168253EDD75008FE82F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				535516D5253986C9003F563F /* TestAppApp.swift */,
-				535516D7253986C9003F563F /* ContentView.swift */,
+				53369B6E253C06B60032195A /* Model.swift */,
+				53369B79253C13470032195A /* ContentView.swift */,
+				53369B71253C06C40032195A /* AddItem.swift */,
+				535516EA25398771003F563F /* ImageView.swift */,
+				53804168253EDD75008FE82F /* ImagePicker.swift */,
+				535516ED25398781003F563F /* PersonView.swift */,
+				535516F02539A4D7003F563F /* PersonItem.swift */,
 				535516D9253986CC003F563F /* Assets.xcassets */,
+				5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */,
+				5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */,
 				535516DE253986CC003F563F /* Persistence.swift */,
 				535516E3253986CC003F563F /* Info.plist */,
 				535516E0253986CC003F563F /* TestApp.xcdatamodeld */,
@@ -144,10 +168,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535516EB25398771003F563F /* ImageView.swift in Sources */,
 				535516DF253986CC003F563F /* Persistence.swift in Sources */,
 				535516E2253986CC003F563F /* TestApp.xcdatamodeld in Sources */,
-				535516D8253986C9003F563F /* ContentView.swift in Sources */,
+				535516EE25398781003F563F /* PersonView.swift in Sources */,
+				53369B72253C06C40032195A /* AddItem.swift in Sources */,
+				53369B7A253C13470032195A /* ContentView.swift in Sources */,
 				535516D6253986C9003F563F /* TestAppApp.swift in Sources */,
+				5364DEA8253E8B74001F7175 /* Agent+CoreDataProperties.swift in Sources */,
+				535516F12539A4D7003F563F /* PersonItem.swift in Sources */,
+				53804169253EDD75008FE82F /* ImagePicker.swift in Sources */,
+				53369B6F253C06B60032195A /* Model.swift in Sources */,
+				5364DEA7253E8B74001F7175 /* Agent+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
