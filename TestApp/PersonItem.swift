@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct PersonItem: View {
-    var name: String
+    @Binding var name: String
     @Binding var image: Data
     var body: some View {
         HStack {
             ImageView(width: 50.0, height: 50.0, image: $image)
-            Text(name)
+            Text("\(name)")
                 .font(.title3)
                 .padding(10)
         }

@@ -12,10 +12,11 @@ struct PersonView: View {
     @Environment(\.presentationMode) var presentationMode
 
     @Binding var image: Data
-    @State var name: String
+    @Binding var name: String
     @State var show: Bool = false
-    @State var number: String
-    @State var email: String
+    @Binding var number: String
+    @Binding var email: String
+    @State var save: Bool = false
     var newName: String
     
     var body: some View {
@@ -38,8 +39,10 @@ struct PersonView: View {
                 }
                 
                 .toolbar(content: {
+                    
                     Button(action: saveChanges) {
                         Text("Save")
+                    
                     }
                 })
                 .font(.title3)

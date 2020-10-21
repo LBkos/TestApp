@@ -17,9 +17,9 @@ struct ListView: View {
     var newName: String
     var body: some View {
                 NavigationLink(
-                    destination: PersonView(image: $image, name: name, number: number, email: email, newName: newName),
+                    destination: PersonView(image: $image, name: $name, number: $number, email: $email, newName: newName),
                     label: {
-                        PersonItem(name: name, image: $image)
+                        PersonItem(name: $name, image: $image)
                     })
         
     }
