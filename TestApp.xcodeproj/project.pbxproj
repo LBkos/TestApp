@@ -53,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		533FC182253FE31F0042FD74 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				535516DE253986CC003F563F /* Persistence.swift */,
+				5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */,
+				5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		535516C9253986C9003F563F = {
 			isa = PBXGroup;
 			children = (
@@ -81,9 +91,7 @@
 				535516F02539A4D7003F563F /* PersonItem.swift */,
 				53804168253EDD75008FE82F /* ImagePicker.swift */,
 				535516D9253986CC003F563F /* Assets.xcassets */,
-				5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */,
-				5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */,
-				535516DE253986CC003F563F /* Persistence.swift */,
+				533FC182253FE31F0042FD74 /* CoreData */,
 				535516E3253986CC003F563F /* Info.plist */,
 				535516E0253986CC003F563F /* TestApp.xcdatamodeld */,
 				535516DB253986CC003F563F /* Preview Content */,
