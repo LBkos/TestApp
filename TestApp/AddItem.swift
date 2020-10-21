@@ -15,6 +15,7 @@ struct AddItem: View {
     @State var name: String = ""
     @State var number: String = ""
     @State var email: String = ""
+    @State var error: Bool = false
     @Environment(\.managedObjectContext) private var viewContext
     
     var body: some View {
@@ -29,6 +30,9 @@ struct AddItem: View {
                     }.sheet(isPresented: self.$show) {
                         ImagePicker(show: self.$show, image: self.$image)
                     }
+                    if error == true {
+                        Text("Поле Name или Phone не заполнено!")
+                    }
                     TextField("Name", text: $name)
                     TextField("Phone", text: $number).keyboardType(.numberPad)
                     TextField("E-mail", text: $email).keyboardType(.emailAddress)
@@ -41,7 +45,14 @@ struct AddItem: View {
         }
         .padding()
         .navigationBarTitle("\(name)", displayMode: .inline)
-        .navigationBarItems(trailing: Button(action: addItem) {
+        .navigationBarItems(trailing: Button(action: {
+            if self.name == "" || self.number == "" {
+                self.error = true
+            } else {
+                addItem()
+            }
+        }) {
+            
             Text("Save")
         })
         

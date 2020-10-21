@@ -11,7 +11,7 @@ struct PersonView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @Environment(\.presentationMode) var presentationMode
 
-    @State var image: Data
+    @Binding var image: Data
     @State var name: String
     @State var show: Bool = false
     @State var number: String

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53369B6F253C06B60032195A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53369B6E253C06B60032195A /* Model.swift */; };
 		53369B72253C06C40032195A /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53369B71253C06C40032195A /* AddItem.swift */; };
 		53369B7A253C13470032195A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53369B79253C13470032195A /* ContentView.swift */; };
 		535516D6253986C9003F563F /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516D5253986C9003F563F /* TestAppApp.swift */; };
@@ -21,10 +20,10 @@
 		5364DEA7253E8B74001F7175 /* Agent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */; };
 		5364DEA8253E8B74001F7175 /* Agent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */; };
 		53804169253EDD75008FE82F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53804168253EDD75008FE82F /* ImagePicker.swift */; };
+		53E4F0B7253F1CC80002747F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4F0B6253F1CC80002747F /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		53369B6E253C06B60032195A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		53369B71253C06C40032195A /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
 		53369B79253C13470032195A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		535516D2253986C9003F563F /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +39,7 @@
 		5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agent+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agent+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		53804168253EDD75008FE82F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		53E4F0B6253F1CC80002747F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +73,13 @@
 			isa = PBXGroup;
 			children = (
 				535516D5253986C9003F563F /* TestAppApp.swift */,
-				53369B6E253C06B60032195A /* Model.swift */,
 				53369B79253C13470032195A /* ContentView.swift */,
+				53E4F0B6253F1CC80002747F /* ListView.swift */,
 				53369B71253C06C40032195A /* AddItem.swift */,
 				535516EA25398771003F563F /* ImageView.swift */,
-				53804168253EDD75008FE82F /* ImagePicker.swift */,
 				535516ED25398781003F563F /* PersonView.swift */,
 				535516F02539A4D7003F563F /* PersonItem.swift */,
+				53804168253EDD75008FE82F /* ImagePicker.swift */,
 				535516D9253986CC003F563F /* Assets.xcassets */,
 				5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */,
 				5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */,
@@ -169,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				535516EB25398771003F563F /* ImageView.swift in Sources */,
+				53E4F0B7253F1CC80002747F /* ListView.swift in Sources */,
 				535516DF253986CC003F563F /* Persistence.swift in Sources */,
 				535516E2253986CC003F563F /* TestApp.xcdatamodeld in Sources */,
 				535516EE25398781003F563F /* PersonView.swift in Sources */,
@@ -178,7 +179,6 @@
 				5364DEA8253E8B74001F7175 /* Agent+CoreDataProperties.swift in Sources */,
 				535516F12539A4D7003F563F /* PersonItem.swift in Sources */,
 				53804169253EDD75008FE82F /* ImagePicker.swift in Sources */,
-				53369B6F253C06B60032195A /* Model.swift in Sources */,
 				5364DEA7253E8B74001F7175 /* Agent+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

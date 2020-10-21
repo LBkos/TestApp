@@ -19,11 +19,7 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 List {
                     ForEach(items) { item in
-                        NavigationLink(
-                            destination: PersonView(image: item.imageD ?? imageData, name: item.name ?? "", number: item.number ?? "", email: item.email ?? "", newName: item.name ?? ""),
-                            label: {
-                                PersonItem(name: item.name ?? "", image: item.imageD ?? imageData)
-                            })
+                        ListView(image: item.imageD ?? imageData, name: item.name ?? "", number: item.number ?? "", email: item.email ?? "", newName: item.name ?? "")
                     }
                     .onDelete(perform: deleteItems)
                     
