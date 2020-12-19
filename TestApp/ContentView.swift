@@ -13,29 +13,47 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Agent.name, ascending: true)], animation: .default)
     private var items: FetchedResults<Agent>
-    var imageData: Data = .init()
+    @StateObject var model = Model()
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 List {
                     ForEach(items) { item in
-                        ListView(image: item.imageD ?? imageData, name: item.name ?? "", number: item.number ?? "", email: item.email ?? "", newName: item.name ?? "")
+                        HStack {
+                            ImageView(width: 50, height: 50, image: item.imageD ?? .init(count: 0))
+                            Text(item.name!)
+                            Spacer()
+                            Button(action: {
+                                model.EditItem(item: item)
+                            }){
+                                Image(systemName: "info.circle")
+                            }
+                            .padding()
+                            .sheet(isPresented: $model.isNewData, content: {
+                                AddItem(model: model)
+                            })
+                        }
                     }
                     .onDelete(perform: deleteItems)
-                    
                 }
                 .toolbar {
                     #if os(iOS)
                     EditButton()
                     #endif
                 }
-                NavigationLink(destination: AddItem()) {
+                Button(action: {
+                    model.clearData()
+                    model.isNewData.toggle()
+                }) {
                     Image(systemName: "plus.circle.fill")
                         .font(.title2)
                         .foregroundColor(.green)
                     Text("Add New")
                         .font(.title3)
                 }
+                .sheet(isPresented: $model.isNewData, content: {
+                    AddItem(model: model)
+                })
                 .padding()
             }
             .navigationBarTitle("Contragents")
@@ -54,7 +72,6 @@ struct ContentView: View {
         }
     }
 }
-
 
 
 struct ContentView_Previews: PreviewProvider {

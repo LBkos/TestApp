@@ -9,72 +9,43 @@ import SwiftUI
 import CoreData
 
 struct AddItem: View {
+    @ObservedObject var model: Model
     @Environment(\.presentationMode) var presentationMode
-    @State var image: Data = .init(count: 0)
-    @State var show: Bool = false
-    @State var name: String = ""
-    @State var number: String = ""
-    @State var email: String = ""
-    @State var error: Bool = false
     @Environment(\.managedObjectContext) private var viewContext
     
     var body: some View {
-        VStack {
-            ImageView(width: 200, height: 200, image: $image)
-            HStack {
-                VStack {
-                    Button(action: {
-                        self.show.toggle()
-                    }) {
-                        Text("Add Foto")
-                    }.sheet(isPresented: self.$show) {
-                        ImagePicker(show: self.$show, image: self.$image)
+        NavigationView {
+            VStack {
+                ImageView(width: 200, height: 200, image: model.image)
+                HStack {
+                    VStack {
+                        Button(action: {
+                            model.show.toggle()
+                        }) {
+                            Text("Add Foto")
+                        }.sheet(isPresented: $model.show) {
+                            ImagePicker(show: $model.show, image: $model.image)
+                        }
+                        TextField("Name", text: $model.name)
+                        TextField("Phone", text: $model.number).keyboardType(.numberPad)
+                        TextField("E-mail", text: $model.email).keyboardType(.emailAddress)
                     }
-                    if error == true {
-                        Text("Поле Name или Phone не заполнено!")
-                    }
-                    TextField("Name", text: $name)
-                    TextField("Phone", text: $number).keyboardType(.numberPad)
-                    TextField("E-mail", text: $email).keyboardType(.emailAddress)
+                    .font(.system(size: 18))
+                    .padding()
                 }
-                .font(.system(size: 18))
-                .padding()
+                Button(action: {
+                    model.saveItem(context: viewContext)
+                }){
+                    Text("Save")
+                        .foregroundColor((model.name != "" && model.number != "") ? Color.blue : Color.gray)
+                }.disabled((model.name != "" && model.number != "") ? false : true)
+                Spacer()
             }
-            Spacer()
-            
+            .padding()
+            .navigationBarTitle(model.name, displayMode: .inline)
+            .navigationBarItems(trailing: Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }) { Text("Cancel") })
         }
-        .padding()
-        .navigationBarTitle("\(name)", displayMode: .inline)
-        .navigationBarItems(trailing: Button(action: {
-            if self.name == "" || self.number == "" {
-                self.error = true
-            } else {
-                addItem()
-            }
-        }) {
-            
-            Text("Save")
-        })
-        
-    }
-    private func addItem() {
-        
-        let newItem = Agent(context: viewContext)
-        newItem.id = UUID()
-        newItem.name = name
-        newItem.number = number
-        newItem.email = email
-        newItem.imageD = image
-        
-        do {
-            try viewContext.save()
-            self.presentationMode.wrappedValue.dismiss()
-            
-        } catch {
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-        }
-        
     }
 }
-

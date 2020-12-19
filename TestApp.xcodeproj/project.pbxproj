@@ -15,12 +15,10 @@
 		535516DF253986CC003F563F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516DE253986CC003F563F /* Persistence.swift */; };
 		535516E2253986CC003F563F /* TestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 535516E0253986CC003F563F /* TestApp.xcdatamodeld */; };
 		535516EB25398771003F563F /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516EA25398771003F563F /* ImageView.swift */; };
-		535516EE25398781003F563F /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516ED25398781003F563F /* PersonView.swift */; };
-		535516F12539A4D7003F563F /* PersonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535516F02539A4D7003F563F /* PersonItem.swift */; };
 		5364DEA7253E8B74001F7175 /* Agent+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */; };
 		5364DEA8253E8B74001F7175 /* Agent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */; };
 		53804169253EDD75008FE82F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53804168253EDD75008FE82F /* ImagePicker.swift */; };
-		53E4F0B7253F1CC80002747F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4F0B6253F1CC80002747F /* ListView.swift */; };
+		53D7F490258DD17F001360C6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D7F48F258DD17F001360C6 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +32,10 @@
 		535516E1253986CC003F563F /* TestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestApp.xcdatamodel; sourceTree = "<group>"; };
 		535516E3253986CC003F563F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		535516EA25398771003F563F /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		535516ED25398781003F563F /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
-		535516F02539A4D7003F563F /* PersonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItem.swift; sourceTree = "<group>"; };
 		5364DEA5253E8B74001F7175 /* Agent+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agent+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5364DEA6253E8B74001F7175 /* Agent+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Agent+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		53804168253EDD75008FE82F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		53E4F0B6253F1CC80002747F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		53D7F48F258DD17F001360C6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +80,9 @@
 			children = (
 				535516D5253986C9003F563F /* TestAppApp.swift */,
 				53369B79253C13470032195A /* ContentView.swift */,
-				53E4F0B6253F1CC80002747F /* ListView.swift */,
 				53369B71253C06C40032195A /* AddItem.swift */,
 				535516EA25398771003F563F /* ImageView.swift */,
-				535516ED25398781003F563F /* PersonView.swift */,
-				535516F02539A4D7003F563F /* PersonItem.swift */,
+				53D7F48F258DD17F001360C6 /* Model.swift */,
 				53804168253EDD75008FE82F /* ImagePicker.swift */,
 				535516D9253986CC003F563F /* Assets.xcassets */,
 				533FC182253FE31F0042FD74 /* CoreData */,
@@ -177,15 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				535516EB25398771003F563F /* ImageView.swift in Sources */,
-				53E4F0B7253F1CC80002747F /* ListView.swift in Sources */,
 				535516DF253986CC003F563F /* Persistence.swift in Sources */,
 				535516E2253986CC003F563F /* TestApp.xcdatamodeld in Sources */,
-				535516EE25398781003F563F /* PersonView.swift in Sources */,
 				53369B72253C06C40032195A /* AddItem.swift in Sources */,
+				53D7F490258DD17F001360C6 /* Model.swift in Sources */,
 				53369B7A253C13470032195A /* ContentView.swift in Sources */,
 				535516D6253986C9003F563F /* TestAppApp.swift in Sources */,
 				5364DEA8253E8B74001F7175 /* Agent+CoreDataProperties.swift in Sources */,
-				535516F12539A4D7003F563F /* PersonItem.swift in Sources */,
 				53804169253EDD75008FE82F /* ImagePicker.swift in Sources */,
 				5364DEA7253E8B74001F7175 /* Agent+CoreDataClass.swift in Sources */,
 			);
